@@ -8,10 +8,13 @@ information about Buzz on its dedicated page at
 https://github.com/kriswallsmith/Buzz.
 
 ``` php
+<?php
+
 $buzz = $this->container->get('buzz');
 ````
 
-The bundle provides a new `buzz` service that returns an instance of `Buzz\Browser`.
+The bundle provides a new `buzz` service that returns an instance of
+`Buzz\Browser`.
 
 ## Installation
 
@@ -42,18 +45,19 @@ Great! Now skip down to *Step 2*.
 
 ### Step 1 (alternative): Installation with submodules
 
-If you're managing your vendor libraries with submodules, first create the
-`vendor/bundles/Sensio/Bundle` directory:
-
-``` bash
-$ mkdir -pv vendor/bundles/Sensio/Bundle
-```
-
-Next, add the two necessary submodules:
+If you're managing your vendor libraries with submodules, simply add the two
+following submodules:
 
 ``` bash
 $ git submodule add git://github.com/kriswallsmith/Buzz.git vendor/buzz
 $ git submodule add git://github.com/sensio/SensioBuzzBundle.git vendor/bundles/Sensio/Bundle/BuzzBundle
+```
+
+Finally update your submodules:
+
+``` bash
+$ git submodule init
+$ git submodule update
 ```
 
 ### Step2: Configure the autoloader
@@ -94,9 +98,12 @@ Congratulations! You're ready to use Buzz into Symfony2!
 
 ## Basic Usage
 
-The only thing to do is to request the `buzz` service from the container to get an instance of `Buzz\Browser` and start issuing HTTP requests:
+The only thing to do is to request the `buzz` service from the container to get
+an instance of `Buzz\Browser` and start issuing HTTP requests:
 
 ``` php
+<?php
+
 $buzz = $this->container->get('buzz');
 
 $response = $buzz->get('http://google.com');
@@ -106,7 +113,9 @@ echo $response->getContent();
 
 ## Configuration
 
-By default, this bundle configures Buzz to perform HTTP requests with the cURL extension. You must check that the cURL PHP extension is correctly installed on your platform:
+By default, this bundle configures Buzz to perform HTTP requests with the cURL
+extension. You must check that the cURL PHP extension is correctly installed on
+your platform:
 
 ``` console
 $ php -i | grep curl
