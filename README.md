@@ -35,7 +35,7 @@ add the following entries to the `deps` file at the root of your project file:
 Next, update your vendors by running:
 
 ``` bash
-$ ./bin/vendors
+$ ./bin/vendors install
 ```
 
 Great! Now skip down to *Step 2*.
