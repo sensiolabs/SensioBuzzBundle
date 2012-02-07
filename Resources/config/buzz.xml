@@ -6,17 +6,14 @@
 
     <parameters>
         <parameter key="buzz.client.class">Buzz\Client\Curl</parameter>
-        <parameter key="buzz.journal.class">Buzz\History\Journal</parameter>
         <parameter key="buzz.browser.class">Buzz\Browser</parameter>
     </parameters>
 
     <services>
-        <service id="buzz.journal" class="%buzz.journal.class%" public="false" />
         <service id="buzz.client" class="%buzz.client.class%" public="false" />
 
         <service id="buzz" class="%buzz.browser.class%">
           <argument type="service" id="buzz.client" />
-          <argument type="service" id="buzz.journal" />
         </service>
     </services>
 </container>
