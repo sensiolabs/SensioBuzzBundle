@@ -1,19 +1,21 @@
 {
     "name": "sensio/buzz-bundle",
     "description": "Bundle around the Buzz HTTP client",
-    "type": "symfony-bundle"
+    "type": "symfony-bundle",
     "keywords": ["http client", "buzz"],
     "homepage": "https://github.com/sensio/SensioBuzzBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Marc Weistroff",
-            "email": "marc.weistroff@sensio.com",
+            "email": "marc.weistroff@sensio.com"
         }
     ],
     "require": {
-        "php": ">=5.3.2"
+        "php": ">=5.3.2",
+        "kriswallsmith/buzz": "master"
     },
+    "target-dir": "Sensio/Bundle/BuzzBundle",
     "autoload": {
         "psr-0": {
             "Sensio\\Bundle\\BuzzBundle": ""
