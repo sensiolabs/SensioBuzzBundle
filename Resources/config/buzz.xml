@@ -6,7 +6,7 @@
 
     <parameters>
         <parameter key="buzz.client.class">Buzz\Client\Curl</parameter>
-        <parameter key="buzz.message_factory.class">Buzz\Message\Factory</parameter>
+        <parameter key="buzz.message_factory.class">Buzz\Message\Factory\Factory</parameter>
         <parameter key="buzz.browser.class">Buzz\Browser</parameter>
     </parameters>
 
