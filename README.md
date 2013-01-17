@@ -18,7 +18,7 @@ The bundle provides a new `buzz` service that returns an instance of
 
 ## Installation
 
-To install this bundle, you'll need both the [Buzz library](kriswallsmith/Buzz)
+To install this bundle, you'll need both the [Buzz library](/kriswallsmith/Buzz)
 and this bundle. Installation depends on how your project is setup:
 
 ### Step 1: Installation using the `bin/vendors.php` method
