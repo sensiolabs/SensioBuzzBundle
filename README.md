@@ -16,7 +16,7 @@ $buzz = $this->container->get('buzz');
 The bundle provides a new `buzz` service that returns an instance of
 `Buzz\Browser`.
 
-## Simple Packagist/Composer Installation
+## Installation for Latest Symfony (>2.1)
 
 Installing the bundle via packagist is the quickest and simplest method of installing the bundle. Here are the steps:
 
@@ -43,7 +43,7 @@ public function registerBundles()
 
 That's it! You are ready to use Buzz for symfony2.
 
-## Installation
+## Installation for Symfony 2.0
 
 To install this bundle, you'll need both the [Buzz library](/kriswallsmith/Buzz)
 and this bundle. Installation depends on how your project is setup:
