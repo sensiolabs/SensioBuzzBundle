@@ -12,7 +12,11 @@
 
     <services>
         <service id="buzz.message_factory" class="%buzz.message_factory.class%" public="false" />
-        <service id="buzz.client" class="%buzz.client.class%" public="false" />
+        <service id="buzz.client" class="%buzz.client.class%" public="false">
+            <call method="setTimeout">
+                <argument>%buzz.client.timeout%</argument>
+            </call>
+        </service>
 
         <service id="buzz" class="%buzz.browser.class%">
           <argument type="service" id="buzz.client" />
