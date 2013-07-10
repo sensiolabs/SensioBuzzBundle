@@ -2,7 +2,7 @@ SensioBuzzBundle
 ================
 
 This bundle provides a simple integration of the "[Buzz
-library](/kriswallsmith/Buzz)" from Kris Wallsmith into Symfony2. Buzz is a
+library](https://github.com/kriswallsmith/Buzz)" from Kris Wallsmith into Symfony2. Buzz is a
 lightweight PHP 5.3 library for issuing HTTP requests. You can find more
 information about Buzz on its dedicated page at
 https://github.com/kriswallsmith/Buzz.
@@ -18,7 +18,7 @@ The bundle provides a new `buzz` service that returns an instance of
 
 ## Installation
 
-To install this bundle, you'll need both the [Buzz library](/kriswallsmith/Buzz)
+To install this bundle, you'll need both the [Buzz library](https://github.com/kriswallsmith/Buzz)
 and this bundle. Installation depends on how your project is setup:
 
 ### Step 1: Installation using the `bin/vendors.php` method
