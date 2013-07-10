@@ -16,7 +16,34 @@ $buzz = $this->container->get('buzz');
 The bundle provides a new `buzz` service that returns an instance of
 `Buzz\Browser`.
 
-## Installation
+## Installation for Latest Symfony (>2.1)
+
+Installing the bundle via packagist is the quickest and simplest method of installing the bundle. Here are the steps:
+
+### Step 1: Composer require
+```
+$ php composer.phar require "sensio/buzz-bundle":"dev-master"
+```
+
+### Step 2: Enable the bundle in the kernel
+
+``` php
+<?php
+// app/AppKernel.php
+
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+
+        new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
+    );
+}
+```
+
+That's it! You are ready to use Buzz for symfony2.
+
+## Installation for Symfony 2.0
 
 To install this bundle, you'll need both the [Buzz library](/kriswallsmith/Buzz)
 and this bundle. Installation depends on how your project is setup:
