@@ -16,6 +16,9 @@
             <call method="setTimeout">
                 <argument>%buzz.client.timeout%</argument>
             </call>
+            <call method="setProxy">
+                <argument>%buzz.client.proxy%</argument>
+            </call>
         </service>
 
         <service id="buzz" class="%buzz.browser.class%">
