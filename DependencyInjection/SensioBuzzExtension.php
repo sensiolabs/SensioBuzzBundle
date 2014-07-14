@@ -23,5 +23,6 @@ class SensioBuzzExtension extends Extension
         $loader->load('buzz.xml');
 
         $container->setParameter('buzz.client.timeout', $config['client_timeout']);
+        $container->setParameter('buzz.client.proxy', $config['proxy']);
     }
 }
