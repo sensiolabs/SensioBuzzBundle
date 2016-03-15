@@ -29,7 +29,9 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('client_timeout')
                     ->defaultValue(5)
-                    ->end()
+                ->end()
+                ->scalarNode('proxy')
+                    ->defaultNull()
                 ->end()
             ->end()
         ;
