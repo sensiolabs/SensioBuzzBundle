@@ -25,6 +25,7 @@
           <argument type="service" id="buzz.client" />
           <argument type="service" id="buzz.message_factory" />
         </service>
+        <service id="Buzz\Browser" alias="buzz" />
     </services>
 </container>
 
